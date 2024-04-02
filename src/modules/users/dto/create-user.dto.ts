@@ -63,8 +63,8 @@ export class newUserDto {
   })
   @IsString({ message: 'El nombre debe ser un string' })
   @IsNotEmpty({ message: 'El nombre es requerido' })
-  @IsEnum(['Administrador', 'Introductor','Inspector'], {
-    message: 'El rol debe ser Administrador, Introductor, o Inspector',
+  @IsEnum(['Administrador', 'Introductor','Inspector', 'Destinatario'], {
+    message: 'El rol debe ser Administrador, Introductor, Inspector, o Destinatario',
   })
   public tipo: string;
 

@@ -28,8 +28,8 @@ async function bootstrap() {
   app.use(helmet());
 
   const swaggerConfig = new DocumentBuilder()
-    .setTitle('Infracciones API Documentation :)')
-    .setDescription('The Infracciones API endpoints and examples.')
+    .setTitle('Mercado Frutihorticola API Documentation :)')
+    .setDescription('The Mercado Frutihorticola API endpoints and examples.')
     .setVersion('1.0')
     .build();
   const document = SwaggerModule.createDocument(app, swaggerConfig);
